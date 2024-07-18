@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
+/* CSS - Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 固定盒模型寬高 */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+  /* outline: solid 1px;  方便查看排版 */
+}
+
+/* --------------------------------------------- 基本預設 --------------------------- */
+
+img {
+  height: auto;
+  max-width: 100%; /* maw */
+  vertical-align: middle; /* 清除2-3px 間距*/
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 每一個文字都使用這個字體: Google英文>中文>備用字體 */
+body {
+  font-family: "Castoro", "微軟正黑體", "Microsoft JhengHei", serif;
+  line-height: 1.5; /* Line height 192px除以 128px= 1.5 */
+  font-size: 24px;
+}
+
+/* --------------------------------------------- SECTION 1 --------------------------- */
+
+/* margin: 0 auto 作用條件：區塊元素、區塊元素設定寬度 */
+.container {
+  width: 1296px; /* layout grid 判斷  */
+  margin: 0 auto; /* 上下：0，左右：除以2，剩下內容置中 */
+}
+
+.banner-title {
+  margin-top: 160px;
+  font-size: 128px;
+  letter-spacing: 0.12em; /* 必須要加上em 才可以變成12%，128px 乘以0.12 */
+}
+
+.banner-subtitle {
+  font-size: 128px;
+  letter-spacing: 0.12em; /* 必須要加上em 才可以變成12%，128px 乘以0.12 */
+}
+
+.banner-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------- SECTION 2 --------------------------- */
+.bg-grey {
+  background-color: #efefef;
+  padding: 48px 0;
+  font-size: 32px;
+}
+
+/* ------------------------------------------ SECTION 3 -------------------------------------- */
+
+.about-item-title {
+  font-size: 40px;
+  color: #ae0000;
+  border-bottom: 3px solid #ae0000;
+}
+
+/* ------------------------------------------------ footer ----------------------------------*/
+
+.footer {
+  background-color: #000000;
+}
+
+.social-list {
+  padding: 64px 0px;
+  text-align: center;
+}
+/* 置中排列, 上下都是64px */
+
+.social-list li {
+  display: inline-block;
+  /* 行內元素：可以水平 ，區塊元素block:自動換行 */
+}
+
+/*  -----------------------------------------  間距模組化設定 ------------------------------------ */
+.w-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-10 {
+  margin-right: 40px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 12px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-10 {
+  margin-bottom: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 160px;
+}
+
+.mt-20 {
+  margin-top: 80px;
+}
